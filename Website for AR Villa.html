@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AR VILLA – Kakinada</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('Villa.PNG') no-repeat center center fixed;
+      background-size: cover;
+      color: #ffffff;
+    }
+    header {
+      background: rgba(0, 51, 102, 0.85);
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header .logo img {
+      height: 60px;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .nav-links a {
+      color: #fff;
+      background: #0056b3;
+      padding: 6px 10px;
+      border-radius: 4px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: background 0.3s;
+      font-size: 0.9em;
+    }
+    .nav-links a:hover { background: #004494; }
+    .nav-links img {
+      height: 18px;
+      vertical-align: middle;
+    }
+    .btn-login {
+      background: #ff7f50;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      color: #fff;
+      transition: background 0.3s;
+      font-size: 1em;
+      margin-left: 15px;
+    }
+    .btn-login:hover {
+      background: #e56b3a;
+    }
+    .container {
+      max-width: 850px;
+      margin: 40px auto;
+      background: rgba(255, 255, 255, 0.94);
+      color: #000;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+    h1 { margin-top: 0; text-align: center; color: #003366; }
+    .amenities span {
+      background: #eef; margin: 4px; padding: 4px 10px;
+      border-radius: 4px; display: inline-block; font-size: 0.9em;
+    }
+    .prices div {
+      background: #f2f2f2; padding: 15px;
+      border: 1px solid #ccc; border-radius: 6px;
+      margin-bottom: 12px;
+    }
+    .prices h3 { margin-top: 0; color: #003366; }
+    .btn-book {
+      display: inline-block; margin-top: 8px;
+      padding: 10px 16px; background: #0077cc;
+      color: #fff; text-decoration: none; border-radius: 4px;
+      transition: background 0.3s;
+    }
+    .btn-book:hover { background: #005fa3; }
+    .contact {
+      margin-top: 30px;
+      background: #eef;
+      color: #000;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .contact h2 {
+      color: #003366;
+      margin-top: 0;
+    }
+    .contact p { margin: 8px 0; }
+    .footer {
+      text-align: center;
+      margin: 20px 0;
+      color: #eee;
+      font-size: 0.9em;
+    }
+
+    /* Modal Styles */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed;
+      z-index: 1000;
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.6);
+    }
+    .modal-content {
+      background-color: #fefefe;
+      margin: 10% auto;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 400px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      color: #000;
+      position: relative;
+    }
+    .modal-content h2 {
+      margin-top: 0;
+      color: #003366;
+      text-align: center;
+    }
+    .modal-content label {
+      display: block;
+      margin: 12px 0 6px;
+      font-weight: bold;
+    }
+    .modal-content input[type="text"],
+    .modal-content input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      font-size: 1em;
+    }
+    .modal-content button {
+      margin-top: 16px;
+      background-color: #0077cc;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      border-radius: 4px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .modal-content button:hover {
+      background-color: #005fa3;
+    }
+    .close-btn {
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      font-size: 1.4em;
+      font-weight: bold;
+      color: #555;
+      cursor: pointer;
+    }
+    .close-btn:hover {
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+ 
+</header>
+
+<div class="container">
+  <h1>Welcome to AR VILLA – Kakinada</h1>
+
+  <p><strong>Location:</strong> Near Sri Prakash School, Gudarigunta, Padmasri Projects, Kakinada, Andhra Pradesh – 533003</p>
+  <p><strong>Check-in:</strong> From 11:00 AM | <strong>Check-out:</strong> Until 12:00 PM</p>
+  <p><strong>Room Options:</strong> Suite Room, Family Room, Deluxe Room</p>
+
+  <p><strong>Amenities:</strong></p>
+  <div class="amenities">
+    <span>Air Conditioning</span><span>Private Bathroom</span><span>Flat-screen TV</span>
+    <span>Refrigerator</span><span>Free WiFi</span><span>Parking</span>
+    <span>24/7 Reception</span><span>Shared Kitchen</span><span>Security CCTV</span>
+  </div>
+
+  <div class="prices">
+    <div>
+      <h3>Suite Room – ₹1,862/night</h3>
+      <p>Includes all taxes and discounts (MakeMyTrip).</p>
+      <a class="btn-book" href="https://www.makemytrip.com/hotels/ar_villa-details-kakinada.html" target="_blank">Book on MakeMyTrip</a>
+    </div>
+    <div>
+      <h3>Standard Room – ₹1,798/night</h3>
+      <p>Free cancellation available (Goibibo).</p>
+      <a class="btn-book" href="https://www.goibibo.com/hotels/ar-villa-hotel-in-east-godavari-3036241055052007361/" target="_blank">Book on Goibibo</a>
+    </div>
+    <div>
+      <h3>Deluxe Room – Check Availability</h3>
+      <p>Live price & availability (Booking.com).</p>
+      <a class="btn-book" href="https://www.booking.com/hotel/in/ar-villa-kakinada.html" target="_blank">Book on Booking.com</a>
+    </div>
+  </div>
+
+  <div class="contact">
+    <h2>Contact & Booking</h2>
+    <p><strong>📱 Phone 1:</strong> +91 81250 24886 &nbsp; | &nbsp; 
+      <a href="https://wa.me/918125024886" target="_blank" style="color:#0077cc; text-decoration:none;">WhatsApp</a>
+    </p>
+    <p><strong>📞 Phone 2:</strong> +91 83175 44798 &nbsp; | &nbsp; 
+      <a href="https://wa.me/918317544798" target="_blank" style="color:#0077cc; text-decoration:none;">WhatsApp</a>
+    </p>
+    <p><strong>📧 Email:</strong> <a href="mailto:Arvilla7013@gmil.com" style="color:#0077cc; text-decoration:none;">Arvilla7013@gmil.com</a></p>
+    <p>Or simply use the booking links above to reserve your stay instantly.</p>
+  </div>
+</div>
+
+<div class="footer">
+  © 2025 AR VILLA – Happy and Secure Stays | Designed with ❤️
+</div>
+
+<!-- Guest Login Modal -->
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" id="closeLoginBtn">&times;</span>
+    <h2>Guest Login</h2>
+    <form id="loginForm">
+      <label for="guestName">Name:</label>
+      <input type="text" id="guestName" name="guestName" required placeholder="Enter your name" />
+      
+      <label for="guestEmail">Email:</label>
+      <input type="text" id="guestEmail" name="guestEmail" required placeholder="Enter your email" />
+      
+      <label for="guestPass">Password:</label>
+      <input type="password" id="guestPass" name="guestPass" required placeholder="Enter your password" />
+      
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  const openLoginBtn = document.getElementById('openLoginBtn');
+  const loginModal = document.getElementById('loginModal');
+  const closeLoginBtn = document.getElementById('closeLoginBtn');
+  const loginForm = document.getElementById('loginForm');
+
+  openLoginBtn.addEventListener('click', () => {
+    loginModal.style.display = 'block';
+  });
+
+  closeLoginBtn.addEventListener('click', () => {
+    loginModal.style.display = 'none';
+  });
+
+  window.addEventListener('click', (event) => {
+    if(event.target === loginModal){
+      loginModal.style.display = 'none';
+    }
+  });
+
+  loginForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    // For demo: just alert guest info
+    const name = document.getElementById('guestName').value;
+    const email = document.getElementById('guestEmail').value;
+    alert(`Welcome, ${name}! You are logged in with email: ${email}`);
+    loginModal.style.display = 'none';
+    loginForm.reset();
+  });
+</script>
+
+</body>
+</html>
